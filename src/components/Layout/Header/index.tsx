@@ -1,7 +1,9 @@
 import Image from "next/image";
 
 import Container from "components/Container";
-import Search from "components/Search";
+import Search from "components/Layout/Header/Search";
+import Nav from "components/Layout/Header/Nav";
+
 import traveloLogo from "public/assets/travelo-logo-header.png";
 
 const Header = () => {
@@ -18,6 +20,9 @@ const Header = () => {
               placeholder="blur"
             />
             <Search />
+          </div>
+          <div className="flex">
+            <Nav/>
           </div>
         </div>
       </Container>
