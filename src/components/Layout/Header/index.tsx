@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Container from "components/Container";
+import Button from 'components/Button';
 import Search from "components/Layout/Header/Search";
 import Nav from "components/Layout/Header/Nav";
 
@@ -21,8 +22,11 @@ const Header = () => {
             />
             <Search />
           </div>
-          <div className="flex">
+          <div className="flex gap-5">
             <Nav/>
+            <Button className="w-[190px]">
+              masuk
+            </Button>
           </div>
         </div>
       </Container>
