@@ -1,9 +1,5 @@
-import Layout from 'components/Layout'
+import HomeContainer from "containers/Home";
 
 export default function IndexPage() {
-  return (
-    <Layout>
-    <div className="text-yellow-100">Hello, Travelo!</div>
-    </Layout>
-  )
+  return <HomeContainer />;
 }
