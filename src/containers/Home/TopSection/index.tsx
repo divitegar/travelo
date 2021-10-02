@@ -1,6 +1,7 @@
 import Container from "components/Container";
 import Button from "components/Button";
 import styles from "./TopSection.module.css";
+import InfoItem from "./InfoItem"
 
 
 const TopSection = () => {
@@ -20,6 +21,12 @@ const TopSection = () => {
             <Button>
               Lihat Paket
             </Button>
+          </div>
+          <div className="flex gap-40 mx-auto">
+            <InfoItem label="+30" subLabel="Negara"/>
+            <InfoItem label="+1500" subLabel="Penginapan"/>
+            <InfoItem label="+100" subLabel="Tempat Wisata"/>
+            <InfoItem label="+50.000" subLabel="Pelanggan"/>
           </div>
         </div>
       </Container>
