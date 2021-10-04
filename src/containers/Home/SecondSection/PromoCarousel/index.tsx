@@ -1,4 +1,5 @@
 import Carousel from "react-multi-carousel";
+import PromoCard from "./PromoCard";
 
 const PromoCarousel = () => {
   return (
@@ -52,9 +53,11 @@ const PromoCarousel = () => {
           },
         }}
       >
-          <article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
-          <article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
-          <article className="bg-white shadow-lg rounded-xl overflow-hidden w-[500px] h-[312px] flex"></article>
+        <PromoCard />
+        <PromoCard />
+        <PromoCard />
+        <PromoCard />
+        <PromoCard />
       </Carousel>
     </>
   );
