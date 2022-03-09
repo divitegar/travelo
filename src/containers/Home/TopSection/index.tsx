@@ -18,7 +18,7 @@ const TopSection = () => {
               di Travel kamu akan dapatkan pelayanan terbaik untuk wisata
               liburanmu kemana saja dan kapan saja
             </p>
-            <Button>
+            <Button className="w-[190px]">
               Lihat Paket
             </Button>
           </div>

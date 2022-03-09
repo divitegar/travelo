@@ -1,21 +1,21 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react'
 
-import Header from "./Header";
+import Header from './Header'
+import Footer from './Footer'
 
-import Footer from "./Footer";
+interface Props {
+  children: ReactNode
+  noFooter?: boolean
+}
 
-type Props = {
-  children: ReactNode;
-};
-
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, noFooter = false }: Props) => {
   return (
     <>
       <Header />
       {children}
-      <Footer />
+      {noFooter ? null : <Footer />}
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
